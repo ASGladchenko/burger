@@ -1,0 +1,45 @@
+@import "../../components/share/mixin/styles";
+footer{
+  padding: 15px 0;
+  background-color: #F5F5F5;
+  .container{
+    justify-content: space-between;
+    @include for-phone-only{
+      flex-direction: column;
+    }
+    span{
+      font: normal normal normal 14px/21px Poppins;
+      @include for-phone-only{
+        font: normal normal normal 11px/16px Poppins;
+      }
+    }
+    .logo{
+      @include for-phone-only{
+        max-width: 180px;
+        margin-bottom: 15px;
+      }
+    }
+    .footer_company_name{
+      font-weight: bold;
+      @include for-phone-only{
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .footer_contacts{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      text-align: right;
+
+      @include for-phone-only{
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  }
+}

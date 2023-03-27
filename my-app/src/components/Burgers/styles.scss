@@ -1,0 +1,23 @@
+@import "../../components/share/mixin/styles";
+
+.burgers {
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    @include for-phone-only{
+      margin-bottom: 25px;
+    }
+  }
+
+  .slider_container {
+    padding: 5px 0;
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 50px;
+
+  }
+  .order-now{
+    margin-inline: auto;
+  }
+}

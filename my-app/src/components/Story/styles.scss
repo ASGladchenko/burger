@@ -1,0 +1,72 @@
+@import "../../components/share/mixin/styles";
+
+.story {
+
+  .story-img {
+    display: flex;
+    max-width: 635px;
+    border-radius: 60px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .story-content {
+    max-width: 668px;
+
+    .story-content-title {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@include for-desktop-1400 {
+  .story {
+    background-color: black;
+    .d-flex {
+      flex-direction: column-reverse;
+    }
+
+    .story-content {
+      max-width: inherit;
+      text-align: center;
+      color: #c4c4c4;
+    }
+
+    .story-content-title {
+      order: 1;
+      text-align: center;
+      color: #c4c4c4;
+      margin-bottom: 15px;
+      .after_h2{
+        width: 90%;
+        margin-inline: auto;
+      }
+      .description_p{
+        width: 90%;
+      }
+    }
+
+    .story-img {
+      max-width: inherit;
+      border: 1px solid lightgrey;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+  }
+}
+
+
+@include for-phone-only{
+  .story .story-img {
+    border-radius: 30px;
+  }
+  .story .story-content-title .after_h2{
+    width: 100%;
+    font: normal normal bold 15px/20px Poppins;
+  }
+}
+
+

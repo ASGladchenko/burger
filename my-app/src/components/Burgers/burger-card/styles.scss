@@ -1,0 +1,90 @@
+@import "../../../components/share/mixin/styles";
+
+.burger_card_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.burger_card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 26px;
+
+  h5 {
+    font: normal normal bold 24px/33px Poppins;
+    text-transform: capitalize;
+    margin: 0 0 61px;
+  }
+
+  h6 {
+    margin: 0;
+  }
+
+  .burger_card_img {
+    display: flex;
+    max-width: 220px;
+    margin-bottom: 42px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .burger_card_ingredients {
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding-top: 12px;
+
+    h6 {
+      font: normal normal bold 14px/20px Poppins;
+    }
+    .burger_ingredient_wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .burger_ingredient_img {
+        display: flex;
+        max-width: 24px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+    .burger_card_ingredient {
+      span {
+        font: normal normal normal 14px/20px Poppins;
+        text-transform: capitalize;
+      }
+    }
+
+  }
+
+  .burger_card_open {
+    margin-left: auto;
+    text-align: right;
+    font: normal normal bold 18px/25px Poppins;
+    color: #008BF6;
+    cursor: pointer;
+  }
+
+}
+
+.pos_abs {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  @include for-desktop-1400{
+    position: relative;
+    width: inherit;
+  }
+}

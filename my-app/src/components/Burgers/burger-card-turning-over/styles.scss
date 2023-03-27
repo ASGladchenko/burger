@@ -1,0 +1,103 @@
+@import "../../../components/share/mixin/styles";
+
+.burger_wrapper_turn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 407.97px;
+  padding: 20px 0;
+  background: transparent;
+  perspective: 1000px;
+  @include for-phone-only{
+    width: 240px;
+  }
+
+  .burger_card_front, .burger_card_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 26px;
+    backface-visibility: hidden;
+    transition: 1s;
+
+    h5 {
+      font: normal normal bold 24px/33px Poppins;
+      text-transform: capitalize;
+      margin: 0 0 61px;
+    }
+
+    .burger_card_img {
+      display: flex;
+      max-width: 220px;
+      margin-bottom: 42px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+
+
+  .burger_card_back {
+    height: 367.97px;
+    justify-content: space-between;
+    transform: rotateY(180deg);
+
+    .ingredients {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-self: flex-start;
+      gap: 10px;
+      width: 100%;
+      height: 100%;
+
+      span {
+        font: normal normal bold 18px/25px Poppins;
+        text-transform: capitalize;
+      }
+
+      .burger_ingredient_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .burger_ingredient_img {
+          display: flex;
+          max-width: 36px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+  .burger_card_open {
+    margin-left: auto;
+    text-align: right;
+    font: normal normal bold 18px/25px Poppins;
+    color: #008BF6;
+    cursor: pointer;
+  }
+  .burger_card_front.card_turn{
+    transform: rotateY(180deg);
+  }
+  .burger_card_back.card_turn{
+    transform: rotateY(360deg);
+  }
+}
+
+

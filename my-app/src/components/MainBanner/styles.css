@@ -1,0 +1,172 @@
+.btn-main-banner {
+  justify-content: center;
+  width: 279px;
+  height: 40px;
+  background-color: #F6E224;
+  border-radius: 10px;
+  transition: 0.33s;
+}
+.btn-main-banner:hover {
+  background-color: #EE9C10;
+  transition: 0.33s;
+}
+.btn-main-banner:active {
+  transform: scale(1.05);
+  transition: 0.33s;
+}
+@media (max-width: 899px) {
+  .btn-main-banner {
+    margin-inline: auto;
+  }
+}
+
+section.main-banner {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 899px) {
+  section.main-banner {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 599px) {
+  section.main-banner {
+    padding-bottom: 0;
+  }
+}
+section.main-banner .main-banner-bg {
+  width: 115%;
+  height: 53%;
+  background: rgb(0, 228, 254);
+  background: linear-gradient(104deg, rgb(0, 228, 254) 31%, rgb(0, 139, 249) 100%);
+  perspective-origin: top right;
+  position: absolute;
+  left: 50%;
+  z-index: -100;
+  transform: perspective(1200px) rotate3d(1, 4.8, -1, 10deg) translateX(-47%);
+  -webkit-box-shadow: inset 0 191px 5px -189px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: inset 0 191px 5px -189px rgba(0, 0, 0, 0.26);
+  box-shadow: inset 0 191px 5px -189px rgba(0, 0, 0, 0.26);
+}
+section.main-banner .container {
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: start;
+}
+section.main-banner .main-banner-content {
+  padding-top: 93px;
+}
+section.main-banner .main-banner-content h1 {
+  font-weight: 900;
+  font-size: 84px;
+  line-height: 125px;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+section.main-banner .main-banner-content p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+section.main-banner .main-banner-img {
+  max-width: 625px;
+  display: flex;
+}
+section.main-banner .main-banner-img img {
+  width: 100%;
+}
+@media (max-width: 1399px) {
+  section.main-banner .main-banner-bg {
+    height: 55%;
+    transform: perspective(1200px) rotate3d(1, 5.7, -1, 10deg) translateX(-47%);
+  }
+  section.main-banner .main-banner-content {
+    padding-top: 73px;
+  }
+  section.main-banner .main-banner-content h1 {
+    font-size: 68px;
+    line-height: 90px;
+  }
+  section.main-banner .main-banner-content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  section.main-banner .main-banner-img {
+    max-width: 480px;
+  }
+}
+@media (max-width: 1099px) {
+  section.main-banner .main-banner-bg {
+    height: 55%;
+    transform: perspective(1200px) rotate3d(1, 6.1, -1, 10deg) translateX(-47%);
+  }
+  section.main-banner .main-banner-content {
+    padding-top: 63px;
+  }
+  section.main-banner .main-banner-content h1 {
+    font-size: 54px;
+    line-height: 80px;
+  }
+  section.main-banner .main-banner-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  section.main-banner .main-banner-img {
+    max-width: 420px;
+  }
+}
+@media (max-width: 899px) {
+  section.main-banner {
+    margin-bottom: 50px;
+  }
+  section.main-banner .main-banner-bg {
+    display: none;
+  }
+  section.main-banner .container {
+    padding: 0 20px 50px;
+    justify-content: start;
+    background: rgb(0, 228, 254);
+    background: linear-gradient(90deg, rgb(0, 228, 254) 31%, rgb(0, 139, 249) 100%);
+    -webkit-box-shadow: inset 0 191px 5px -189px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: inset 0 191px 5px -189px rgba(0, 0, 0, 0.26);
+    box-shadow: inset 0 191px 5px -189px rgba(0, 0, 0, 0.26);
+  }
+  section.main-banner .container .main-banner-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 400px;
+    transform: rotate(28deg) translate(-20%, -50%);
+    z-index: 0;
+  }
+  section.main-banner .container .main-banner-content {
+    position: relative;
+    z-index: 5;
+    padding: 0;
+    align-items: center;
+    text-shadow: 1px 1px 1px white;
+  }
+}
+@media (max-width: 599px) {
+  section.main-banner {
+    margin-bottom: 25px;
+  }
+  section.main-banner .container {
+    padding: 25px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  section.main-banner .container h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  section.main-banner .main-banner-img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

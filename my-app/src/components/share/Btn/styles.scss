@@ -1,0 +1,11 @@
+.btn{
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a, button {
+    font-weight: bold;
+    line-height: 27px;
+    font-size: 18px;
+  }
+}

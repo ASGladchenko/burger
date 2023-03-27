@@ -1,0 +1,47 @@
+.nav-bar {
+  gap: 70px;
+  margin-left: 102px;
+  font: normal normal bold 18px/27px Poppins;
+  letter-spacing: 0;
+
+  a {
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.33s;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+      content: '';
+      height: 2px;
+      width: 0;
+      transition: width 0.3s;
+    }
+
+    &:hover {
+      color: #93db31;
+      transition: 0.33s;
+
+      &:before {
+        background-color: #ed9b10;
+        width: 100%;
+        transition: width 0.3s;
+      }
+    }
+
+    &:nth-child(odd) {
+      &:hover {
+        color: #ed9b10;
+        transition: 0.33s;
+        &:before {
+          background-color: #93db31;
+        }
+      }
+    }
+    &:active{
+      transform: scale(1.1);
+      transition: 0.11s;
+    }
+  }
+}

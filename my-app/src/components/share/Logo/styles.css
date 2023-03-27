@@ -1,0 +1,16 @@
+.logo {
+  max-width: 208px;
+  cursor: pointer;
+  transform-origin: center;
+  transition: 0.3s;
+}
+.logo img {
+  width: 100%;
+  display: block;
+}
+.logo:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=styles.css.map */

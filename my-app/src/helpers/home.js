@@ -1,0 +1,5 @@
+
+export const home = (navigate) => {
+    navigate('/', {replace: false});
+    setTimeout(()=>window.scrollTo({top:0,left:0,behavior:'smooth'}), 1)
+}

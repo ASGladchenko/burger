@@ -1,0 +1,45 @@
+@media (max-width: 1099px) {
+  header .container {
+    justify-content: space-between;
+  }
+  header .container .nav-bar, header .container .order-now {
+    margin-left: 0;
+    gap: 30px;
+  }
+}
+@media (max-width: 899px) {
+  header .container {
+    flex-wrap: wrap;
+  }
+  header .container .nav-bar {
+    width: 100%;
+    order: 1;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 7px 0;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+  }
+}
+@media (max-width: 599px) {
+  header .container .logo {
+    max-width: 180px;
+  }
+  header .container .btn {
+    height: 30px;
+    width: 100px;
+  }
+  header .container .btn button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+  }
+  header .container .nav-bar {
+    font-size: 12px;
+    font-weight: 800;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

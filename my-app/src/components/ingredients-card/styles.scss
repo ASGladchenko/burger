@@ -1,0 +1,20 @@
+@import "../../components/share/mixin/styles";
+.card_ingredient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 229px;
+  height: 242px;
+  padding: 20px 0;
+  background: #FFFFFF;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 26px;
+  text-align: center;
+
+  p {
+    text-transform: capitalize;
+    font: normal normal bold 18px/27px Poppins;
+  }
+
+}

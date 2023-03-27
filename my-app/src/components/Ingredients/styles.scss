@@ -1,0 +1,83 @@
+@import "../../components/share/mixin/styles";
+
+.ingredients {
+  text-align: center;
+
+  .container {
+    .after_h2 {
+      max-width: 690px;
+      margin: 0 auto 45px;
+    }
+
+    .description_p {
+      max-width: 894px;
+      margin-inline: auto;
+    }
+
+    @include for-tablet-only {
+      .after_h2 {
+        margin-bottom: 25px;
+        max-width: 80%;
+
+      }
+      .description_p {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+
+    @include for-phone-only {
+      .after_h2 {
+        font: normal normal bold 16px/26px Poppins;
+        max-width: 100%;
+
+      }
+
+    }
+  }
+
+  .ingredients-carousel {
+    position: relative;
+    padding: 0 0 50px 143px;
+    max-width: 1209px;
+    @include for-desktop-1400 {
+      padding: 0 0 50px;
+    }
+    @include for-tablet-only {
+      padding-bottom: 25px;
+    }
+  }
+
+
+  .swiper-wrapper {
+    padding: 5px;
+  }
+
+  .slider_blur_start, .slider_blur_end {
+    width: 115px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    @include for-phone-only {
+      width: 50px;
+    }
+  }
+
+}
+
+.slider_blur_start {
+  left: 137px;
+  background: linear-gradient(90deg, #FFFFFF 20%, #FFFFFF00 100%) 0 0 no-repeat;
+  @include for-desktop-1400 {
+    left: -5px;
+  }
+
+}
+
+.slider_blur_end {
+  background: linear-gradient(270deg, #FFFFFF 20%, #FFFFFF00 100%) 0 0 no-repeat;
+  right: -5px;
+}

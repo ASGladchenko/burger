@@ -1,0 +1,16 @@
+.logo {
+  max-width: 208px;
+
+  img{
+    width: 100%;
+    display: block;
+  }
+  cursor: pointer;
+  transform-origin: center;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
